@@ -25,6 +25,9 @@
 var NAVTREE =
 [
   [ "SturdyPath", "index.html", [
+    [ "Sturdy Path", "index.html", [
+      [ "Example Usage", "index.html#autotoc_md1", null ]
+    ] ],
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ]
     ] ],

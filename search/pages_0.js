@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sturdypath_0',['SturdyPath',['../index.html',1,'']]]
+  ['sturdy_20path_0',['Sturdy Path',['../index.html',1,'']]]
 ];

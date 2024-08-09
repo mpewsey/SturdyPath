@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SturdyPath: SturdyPath</title>
+<title>SturdyPath: Sturdy Path</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,11 +95,30 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">SturdyPath </div></div>
+  <div class="headertitle"><div class="title">Sturdy Path </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md__github_workspace_README"></a></p>
-</div></div><!-- PageDoc -->
+<div class="textblock"><p ><a class="anchor" id="md__github_workspace_README"></a> Sturdy Path is a Godot .NET addon that provides a way to reference a scene or resource by path, in a manner that won't break when moving files around within the project. This is accomplished by keeping track of the target file's <code>uid://</code> path, which is invariant of the file's location within the project.</p>
+<p ><img src="https://github.com/user-attachments/assets/5efec515-aa99-4f41-a93e-d01a8d8e5a43" alt="image" class="inline"/></p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Example Usage</h1>
+<div class="fragment"><div class="line">{BattleEffect.cs} </div>
+<div class="line">using MPewsey.SturdyPath;</div>
+<div class="line"> </div>
+<div class="line">public partial class BattleEffect : Resource</div>
+<div class="line">{</div>
+<div class="line">    // Create an exported SturdyPathRef property for the scene or resource you wish to reference by path.</div>
+<div class="line">    [Export] public SturdyPathRef VfxScenePath { get; set; }</div>
+<div class="line"> </div>
+<div class="line">    // Use the SturdyPathRef.Load method to load the resource for use per typical Godot usage patterns.</div>
+<div class="line">    public void SpawnVfx(Node parent)</div>
+<div class="line">    {</div>
+<div class="line">        var scene = VfxScenePath.Load&lt;PackedScene&gt;();</div>
+<div class="line">        var vfx = scene.Instantiate();</div>
+<div class="line">        parent.AddChild(vfx);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
