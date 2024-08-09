@@ -3,7 +3,7 @@ using Godot;
 namespace MPewsey.SturdyPath
 {
     /// <summary>
-    /// Holds weak resource path references in a way that prevents path invalidation
+    /// Holds resource path references in a way that prevents path invalidation
     /// when files are moved within a Godot project.
     /// </summary>
     [Tool]
