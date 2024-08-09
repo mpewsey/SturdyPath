@@ -98,9 +98,17 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Sturdy Path </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md__github_workspace_README"></a> Sturdy Path is a Godot .NET addon that provides a way to reference a scene or resource by path, in a manner that won't break when moving files around within the project. This is accomplished by keeping track of the target file's <code>uid://</code> path, which is invariant of the file's location within the project.</p>
+<div class="textblock"><p ><a class="anchor" id="md__github_workspace_README"></a> <a href="https://github.com/mpewsey/SturdyPath/actions/workflows/tests.yml"><img src="https://github.com/mpewsey/SturdyPath/actions/workflows/tests.yml/badge.svg" alt="Tests" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/mpewsey/SturdyPath/actions/workflows/docs.yml"><img src="https://github.com/mpewsey/SturdyPath/actions/workflows/docs.yml/badge.svg?event=push" alt="Docs" style="pointer-events: none;" class="inline"/></a> <img src="https://img.shields.io/badge/Godot%20.NET-4.2-blue" alt="Godot .NET 4.0" class="inline"/> <img src="https://img.shields.io/github/v/tag/mpewsey/SturdyPath?label=Version" alt="Version" class="inline"/></p>
+<p >Sturdy Path is a simple Godot addon that provides a way to reference a scene or resource by path, in a manner that won't break when moving files around within the project. This is accomplished by keeping track of the target file's <code>uid://</code> path, which is invariant of the file's location within the project.</p>
 <p ><img src="https://github.com/user-attachments/assets/5efec515-aa99-4f41-a93e-d01a8d8e5a43" alt="image" class="inline"/></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
+Installation</h1>
+<ol type="1">
+<li>Copy the <code>addons/mpewsey.sturdypath</code> directory from this repository into the <code>addons</code> folder of your Godot project.</li>
+<li>Build your Godot project solution, so that the newly incorporated C# addon scripts are compiled.</li>
+<li>Enable the addon by going to <code>Project &gt; Project Settings</code> and clicking the enable checkbox next to the plugin.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md2"></a>
 Example Usage</h1>
 <div class="fragment"><div class="line">{BattleEffect.cs} </div>
 <div class="line">using MPewsey.SturdyPath;</div>
