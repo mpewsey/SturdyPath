@@ -1,4 +1,5 @@
 docs/output/*
+temp/*
 
 # Godot 4+ specific ignores
 .godot/

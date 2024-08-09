@@ -20,4 +20,4 @@ project/assembly_name="SturdyPath"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/mpewsey.sturdypath/plugin.cfg")
+enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg", "res://addons/mpewsey.sturdypath/plugin.cfg")

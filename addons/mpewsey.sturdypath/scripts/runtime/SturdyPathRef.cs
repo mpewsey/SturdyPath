@@ -20,14 +20,14 @@ namespace MPewsey.SturdyPath
         /// When set to true, it opens the target resource in the Godot editor.
         /// The property always returns false.
         /// </summary>
-        [Export] public bool _OpenResource { get => false; set => CallDeferred(MethodName.OpenResourceInEditor, value); }
+        [Export] public bool OpenResource { get => false; set => CallDeferred(MethodName.OpenResourceInEditor, value); }
 
         /// <summary>
         /// This property is used as a Godot inspector button only and should not be used via script.
         /// When set to true, it refreshes the Res path to its current destination based on the current Uid path.
         /// The property always returns false.
         /// </summary>
-        [Export] public bool _RefreshResPath { get => false; set => RefreshResPath(value); }
+        [Export] public bool RefreshResPath { get => false; set => RefreshResourcePath(value); }
 
         private string _resPath;
         /// <summary>
@@ -88,7 +88,7 @@ namespace MPewsey.SturdyPath
         /// Returns true if successful.
         /// </summary>
         /// <param name="run">Performs the operation only when set to true.</param>
-        public bool RefreshResPath(bool run = true)
+        public bool RefreshResourcePath(bool run = true)
         {
             if (!run)
                 return false;
@@ -152,7 +152,7 @@ namespace MPewsey.SturdyPath
         /// Otherwise, the Res path is returned.
         /// </summary>
         /// <param name="typeHint">The resource type hint.</param>
-        private string GetLoadPath(string typeHint = null)
+        public string GetLoadPath(string typeHint = null)
         {
             return ResourceLoader.Exists(UidPath, typeHint) ? UidPath : ResPath;
         }

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SturdyPathRef" load_steps=2 format=3 uid="uid://rxhphhkir3js"]
+
+[ext_resource type="Script" path="res://addons/mpewsey.sturdypath/scripts/runtime/SturdyPathRef.cs" id="1_qcun0"]
+
+[resource]
+script = ExtResource("1_qcun0")
+OpenResource = false
+RefreshResPath = false
+ResPath = "res://tests/resources/test_sturdy_path_ref.tres"
+UidPath = "uid://rxhphhkir3js"
