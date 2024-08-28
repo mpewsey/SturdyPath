@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/mpewsey/SturdyPath/actions/workflows/tests.yml/badge.svg)](https://github.com/mpewsey/SturdyPath/actions/workflows/tests.yml)
 [![Docs](https://github.com/mpewsey/SturdyPath/actions/workflows/docs.yml/badge.svg?event=push)](https://github.com/mpewsey/SturdyPath/actions/workflows/docs.yml)
-![Godot .NET 4.0](https://img.shields.io/badge/Godot%20.NET-4.2-blue)
+![Godot .NET](https://img.shields.io/badge/Godot%20.NET-4.2%20|%204.3-blue)
 ![Version](https://img.shields.io/github/v/tag/mpewsey/SturdyPath?label=Version)
 
 Sturdy Path is a simple Godot addon that provides a way to reference a scene or resource by path, in a manner that won't break when moving files around within the project. This is accomplished by keeping track of the target file's `uid://` path, which is invariant of the file's location within the project.
