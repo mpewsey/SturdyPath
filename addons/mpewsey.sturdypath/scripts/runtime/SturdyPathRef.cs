@@ -158,6 +158,14 @@ namespace MPewsey.SturdyPath
         }
 
         /// <summary>
+        /// Returns true if either the Uid path of Res path exist.
+        /// </summary>
+        public bool PathExists()
+        {
+            return ResourceLoader.Exists(UidPath) || ResourceLoader.Exists(ResPath);
+        }
+
+        /// <summary>
         /// Loads the target resource and returns it.
         /// See the Godot ResourceLoader.Load method for an explaination of parameters.
         /// </summary>
