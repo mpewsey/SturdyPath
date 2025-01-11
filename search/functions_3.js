@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['refreshresourcepath_0',['RefreshResourcePath',['../class_m_pewsey_1_1_sturdy_path_1_1_sturdy_path_ref.html#a0a09e5aa1e62461ddf543866aea3e921',1,'MPewsey::SturdyPath::SturdyPathRef']]]
+  ['pathexists_0',['PathExists',['../class_m_pewsey_1_1_sturdy_path_1_1_sturdy_path_ref.html#a699b0b817c3bd408d0a30ac9044f1932',1,'MPewsey::SturdyPath::SturdyPathRef']]]
 ];

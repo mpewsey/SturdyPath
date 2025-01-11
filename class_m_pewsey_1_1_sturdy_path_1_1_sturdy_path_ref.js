@@ -6,6 +6,7 @@ var class_m_pewsey_1_1_sturdy_path_1_1_sturdy_path_ref =
     [ "Load", "class_m_pewsey_1_1_sturdy_path_1_1_sturdy_path_ref.html#a082cd62c43e6b9e294d8fb851765693e", null ],
     [ "Load< T >", "class_m_pewsey_1_1_sturdy_path_1_1_sturdy_path_ref.html#a17daee0ad0af91cf977545764c54ce8a", null ],
     [ "OpenResourceInEditor", "class_m_pewsey_1_1_sturdy_path_1_1_sturdy_path_ref.html#ad5ee1c8c52082051ae333ca863af4dbc", null ],
+    [ "PathExists", "class_m_pewsey_1_1_sturdy_path_1_1_sturdy_path_ref.html#a699b0b817c3bd408d0a30ac9044f1932", null ],
     [ "RefreshResourcePath", "class_m_pewsey_1_1_sturdy_path_1_1_sturdy_path_ref.html#a0a09e5aa1e62461ddf543866aea3e921", null ],
     [ "SetResPath", "class_m_pewsey_1_1_sturdy_path_1_1_sturdy_path_ref.html#a5dd75a0f9e722c757a41935133e8d107", null ],
     [ "ResPathExtensions", "class_m_pewsey_1_1_sturdy_path_1_1_sturdy_path_ref.html#abe0f624dd84799e13f0161d1ccf457c3", null ],

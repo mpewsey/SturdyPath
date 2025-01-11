@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "glmorsu",
+  0: "glmoprsu",
   1: "s",
   2: "m",
-  3: "glors",
+  3: "gloprs",
   4: "r",
   5: "oru",
   6: "s"
