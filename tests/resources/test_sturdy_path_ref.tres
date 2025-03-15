@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="SturdyPathRef" load_steps=2 format=3 uid="uid://rxhphhkir3js"]
 
-[ext_resource type="Script" path="res://addons/mpewsey.sturdypath/scripts/runtime/SturdyPathRef.cs" id="1_qcun0"]
+[ext_resource type="Script" uid="uid://c7ghikycoa088" path="res://addons/mpewsey.sturdypath/scripts/runtime/SturdyPathRef.cs" id="1_qcun0"]
 
 [resource]
 script = ExtResource("1_qcun0")
