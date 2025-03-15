@@ -15,6 +15,24 @@ namespace MPewsey.SturdyPath
         /// </summary>
         private const string ResPathExtensions = "*.tscn,*.tres,*.scn,*.res";
 
+        private string _resPath;
+        /// <summary>
+        /// The target resource path, beginning with with res://. This path may become invalid if the target resource file is moved.
+        /// </summary>
+        [Export(PropertyHint.File, ResPathExtensions)] public string ResPath { get => _resPath; set => SetResPath(value); }
+
+        /// <summary>
+        /// The Uid path for the target resource, beginning with uid://. This path should never become invalid unless the target resource file is deleted.
+        /// </summary>
+        [Export] public string UidPath { get; set; }
+
+#if GODOT4_4_OR_GREATER
+        [ExportToolButton("Open Resource")] public Callable OpenResourceButton => Callable.From(OnSubmitOpenResourceButton);
+        private void OnSubmitOpenResourceButton() => CallDeferred(MethodName.OpenResourceInEditor, true);
+
+        [ExportToolButton("Refresh Res Path")] public Callable RefreshResPathButton => Callable.From(OnSubmitRefreshResPathButton);
+        private void OnSubmitRefreshResPathButton() => RefreshResourcePath();
+#else
         /// <summary>
         /// This property is used as a Godot inspector button only and should not be used via script.
         /// When set to true, it opens the target resource in the Godot editor.
@@ -28,17 +46,7 @@ namespace MPewsey.SturdyPath
         /// The property always returns false.
         /// </summary>
         [Export] public bool RefreshResPath { get => false; set => RefreshResourcePath(value); }
-
-        private string _resPath;
-        /// <summary>
-        /// The target resource path, beginning with with res://. This path may become invalid if the target resource file is moved.
-        /// </summary>
-        [Export(PropertyHint.File, ResPathExtensions)] public string ResPath { get => _resPath; set => SetResPath(value); }
-
-        /// <summary>
-        /// The Uid path for the target resource, beginning with uid://. This path should never become invalid unless the target resource file is deleted.
-        /// </summary>
-        [Export] public string UidPath { get; set; }
+#endif
 
         public SturdyPathRef()
         {
