@@ -5,6 +5,9 @@
 ![Godot .NET](https://img.shields.io/badge/Godot%20.NET-4.2%20|%204.3-blue)
 ![Version](https://img.shields.io/github/v/tag/mpewsey/SturdyPath?label=Version)
 
+> [!NOTE]  
+> Since Godot 4.4, Godot now stores UID paths (but displays RES paths) when exporting a file path string variable. Therefore, this addon is unnecessary for Godot 4.4 or later.
+
 Sturdy Path is a simple Godot addon that provides a way to reference a scene or resource by path, in a manner that won't break when moving files around within the project. This is accomplished by keeping track of the target file's `uid://` path, which is invariant of the file's location within the project.
 
 ![image](https://github.com/user-attachments/assets/5efec515-aa99-4f41-a93e-d01a8d8e5a43)
